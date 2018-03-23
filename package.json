@@ -1,0 +1,17 @@
+{
+  "name": "@alphaeadev/bind-socketio-handlers",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "http://proliant:8081/repository/npm-releases/"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Graham King <gking2224@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}

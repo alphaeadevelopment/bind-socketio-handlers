@@ -1,9 +1,6 @@
 {
-  "name": "@alphaeadev/bind-socketio-handlers",
-  "version": "1.0.1",
-  "publishConfig": {
-    "registry": "http://proliant:8081/repository/npm-releases/"
-  },
+  "name": "bind-socketio-handlers",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {

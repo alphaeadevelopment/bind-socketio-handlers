@@ -1,6 +1,6 @@
 {
   "name": "bind-socketio-handlers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Bind event handlers to socket.io socket on client connection",
   "main": "index.js",
   "scripts": {

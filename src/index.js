@@ -4,6 +4,7 @@ const callHandler = (io, socket, callbacks) => (event, handler) => {
   const fn = handler.call(null, callbacks, io, socket);
   return (payload) => {
     try {
+      console.log('received event %s : %o', event, payload);
       const rv = fn.call(null, payload);
       if (rv instanceof Promise && callbacks && callbacks.onError) {
         rv.catch(callbacks.onError);
@@ -26,8 +27,8 @@ const bindHandlers = (events, handlers, socket, doCall) => {
   bindHandlers(events.slice(1), handlers, socket, doCall);
 };
 
-exports.default = (io, socket, handlers, callbacks) => {
-  const mergedCallbacks = Object.assign({}, defaultCallbacks, callbacks);
+export default (io, socket, handlers, callbacks) => {
+  const mergedCallbacks = Object.assign({}, defaultCallbacks(io, socket), callbacks);
   const doCall = callHandler(io, socket, mergedCallbacks);
 
   bindHandlers(Object.keys(handlers), handlers, socket, doCall);

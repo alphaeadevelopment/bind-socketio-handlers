@@ -1,17 +1,21 @@
 {
   "name": "bind-socketio-handlers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bind event handlers to socket.io socket on connection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config config/webpack.config.js"
   },
   "author": "Graham King <gking2224@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.5"
-  },
-  "peerDependencies": {
-    "lodash": "^4.17.5"
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.11.0"
   }
 }

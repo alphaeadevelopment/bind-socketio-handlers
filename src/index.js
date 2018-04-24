@@ -26,7 +26,7 @@ const bindHandlers = (events, handlers, socket, doCall) => {
   bindHandlers(events.slice(1), handlers, socket, doCall);
 };
 
-module.exports = (io, socket, handlers, callbacks) => {
+exports.default = (io, socket, handlers, callbacks) => {
   const mergedCallbacks = Object.assign({}, defaultCallbacks, callbacks);
   const doCall = callHandler(io, socket, mergedCallbacks);
 

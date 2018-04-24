@@ -13,7 +13,7 @@ var config = {
   entry: path.join(__dirname, '../src/index.js'),
   output: {
     path: path.join(__dirname, '..'),
-    filename: 'index.js',
+    filename: 'bundle.js',
     libraryTarget: 'commonjs',
   },
   module: {

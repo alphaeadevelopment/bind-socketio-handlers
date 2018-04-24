@@ -4,7 +4,6 @@ const callHandler = (io, socket, callbacks) => (event, handler) => {
   const fn = handler.call(null, callbacks, io, socket);
   return (payload) => {
     try {
-      console.log('received event %s : %o', event, payload);
       const rv = fn.call(null, payload);
       if (rv instanceof Promise && callbacks && callbacks.onError) {
         rv.catch(callbacks.onError);

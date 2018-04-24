@@ -1,13 +1,14 @@
 {
   "name": "bind-socketio-handlers",
   "version": "1.0.2",
-  "description": "Bind event handlers to socket.io socket on connection",
+  "description": "Bind event handlers to socket.io socket on client connection",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config config/webpack.config.js"
   },
   "author": "Graham King <gking2224@gmail.com>",
   "license": "ISC",
+  "repository": "https://github.com/alphaeadevelopment/bind-socketio-handlers.git",
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {

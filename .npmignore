@@ -1,3 +1,4 @@
 /config
 /src
-.gitignore
+/.gitignore
+/.babelrc
